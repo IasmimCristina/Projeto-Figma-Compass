@@ -2,11 +2,13 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
   background-color: #EBEBEB;
 }
 
-div {
+div { 
   font-family: 'Poppins', sans-serif;
 
 }
@@ -16,13 +18,33 @@ p {
 }
 
 .slider {
-  width: 800px;
-  height: 500px;
+  width: 600px;
+  height: 700px;
+  overflow: hidden;
+  position: absolute; 
 
-}  
+}
+
+input {
+  display: none;
+}
 
 .slides {
   display: flex;
 }
+
+img {
+  width: 600px;
+  height: 500px;
+}
+
+.navigation-bar {
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  transform: translate(-50%);
+  
+}
+
 
 
