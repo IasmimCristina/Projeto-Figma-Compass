@@ -13,13 +13,19 @@ div {
 
 }
 
+h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
 p {
   font-weight: lighter;
+  margin-bottom: 30px;
 }
 
 .slider {
-  width: 600px;
-  height: 700px;
+  width: 700px;
+  height: 800px;
   overflow: hidden;
   position: absolute; 
 
@@ -31,18 +37,51 @@ input {
 
 .slides {
   display: flex;
+  text-align: center;
 }
 
+
+
 img {
-  width: 600px;
-  height: 500px;
+  width: 700px;
+  height: 550px;
 }
 
 .navigation-bar {
   position: absolute;
-  bottom: 200px;
+  bottom: 250px;
   left: 50%;
   transform: translate(-50%);
+  
+}
+
+.checklist-btn {
+  border: 1px solid #000000;
+  margin: 15px;
+}
+
+.buttons-screen{   
+  justify-content: center;
+  
+}
+.buttons-screen button {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  
+  
+  
+  
+
+}
+.btn-continue {
+  
+  
+  
+
+  
   
 }
 
