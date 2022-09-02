@@ -25,7 +25,7 @@ p {
 
 .slider {
   width: 700px;
-  height: 900px;
+  height: 1000px;
   overflow: hidden;
   position: absolute; 
 
@@ -50,22 +50,26 @@ img {
 .navigation-bar {
   display: flex;
   position: absolute;
-  bottom: 325px;
+  bottom: 425px;
   left: 50%;
   transform: translate(-50%);
   
 }
 
 .checklist-btn {
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   margin: 10px;
   padding: 2px;
   height: 10px;
-  width: 10px;
-  
-  border-radius: 20px;
-  cursor: pointer;
- 
+  width: 10px;  
+  border-radius: 30px;
+  cursor: pointer; 
+}
+.checklist-btn:hover {
+  transition: 0.4s;
+  background: #92E3A9;
+  border-color: #92E3A9;  
+  transform: translateY(-2px);
 }
 
 .buttons-screen{   
@@ -77,14 +81,17 @@ img {
   font-weight: bolder;
   display: flex;
   text-align: center;  
-  margin: 20px auto;
+  margin: 65px auto;
   cursor: pointer;
     
 }
 .btn-continue {  
-  font-size: 22px; /* Calibrar o tamanho das letras na versão descktop.*/
-  padding: 20px 150px;
+  
+  font-size: 22px; 
+  padding: 20px 225px;
+  margin-bottom: 15px;
   border: none;
+  box-shadow: 0px 8px 22px 8px rgba(0, 0, 0, 0.2);
   background-color: #92E3A9;
   color: #EBEBEB;
   
@@ -93,7 +100,22 @@ img {
 .btn-continue:hover {
   color: #92E3A9;
   background-color: #0ea538;
+  transition:  0.6s;
+  box-shadow: 0px 8px 22px 8px rgba(94, 189, 30, 0.4);
+  transform: translateY(-8px);  
+
+}
+.btn-skip {
+  font-size: 15px;
+  border: none;
+  color: #92E3A9;
+  background: none;
   
+}
+.btn-skip:hover {
+  transform: translateY(-5px);
+  font-size: 18px;
+  transition:  0.4s;  
 
 }
   
