@@ -79,7 +79,34 @@ input {
   border-color: #92E3A9;  
   transform: translateY(-2px);
 }
+.navigation-auto div {
+  
+  border: #EBEBEB;
+  margin: 10px;
+  padding: 2px;
+  height: 10px;
+  width: 10px;  
+  border-radius: 30px;
+  cursor: pointer;
 
+}
+.navigation-auto {
+  
+  display: flex;
+  position: absolute;
+  bottom: 425px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+
+#screen1:checked ~ .navigation-auto .auto-btn01 {  
+  background-color:#92E3A9 ;
+}
+#screen1:checked ~ #checklist01 {
+  display: none;
+  /* Problema com o checklist selecionado.*/
+}
 
 
 .buttons-screen{   
@@ -143,6 +170,12 @@ input {
 #continue-02:checked ~ .first {
   margin-left: -66.6%;
 } 
+/*#screen1:checked ~ #checklist01 {  
+  background: #92E3A9;
+  border-color: #92E3A9;  
+  
+}
+
   
   
 
