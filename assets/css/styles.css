@@ -90,7 +90,7 @@ p {
 #radio02:checked ~ .first{
   margin-left: -33.3%;  
 }
-#radio03:checked ~ .first{
+#radio03:checked ~ .first {
   margin-left: -66.6%;  
 }
 .navigation-auto div {
@@ -112,7 +112,26 @@ p {
   border: 1px solid #92E3A9;
 }
 /* ------Configuração dos botões SKip e Continue----*/
-
+.btn-continue01, .btn-continue02, .btn-getStarted {  
+  font-size: 25px;
+  padding: 15px 70px;
+  background-color: #92E3A9;
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+.btn-continue01:hover, .btn-continue02:hover, .btn-getStarted:hover {
+  box-shadow:  0px 8px 30px rgba(1, 107, 31, 0.4);
+  background-color: rgb(255, 255, 255);
+  color: #92E3A9;
+}
+.btn-skip {
+  background: none;
+  color: #92E3A9;
+}
+.btn-skip:hover {
+  font-size: 18px;
+}
 /* -------------------------------------------------*/
 
 
