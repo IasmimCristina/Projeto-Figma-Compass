@@ -9,6 +9,7 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: 'Poppins', sans-serif;
 }
+/* ------Estilização de texto----*/
 h1 {
   font-size: 50px;
   margin-bottom: 10px;
@@ -17,6 +18,9 @@ p {
   font-weight: 100;
   margin-bottom: 30px;
 }
+/*---------------------*/
+
+/* -----Configuração dos slides----- */ 
 .slider {
   margin: 0 auto;
   width: 700px;
@@ -63,6 +67,9 @@ p {
   transform: translateY(-5px);
   transition: 0.8s;
 }
+/*--------------------------------------------*/
+
+/* -----Estilização dos pontos de navegação------ */
 .navigation-dots {
   position: absolute;
   width: 700px;
@@ -70,6 +77,7 @@ p {
   display: flex;
   left: 50%;
   transform: translate(-50%);
+  
   justify-content: center;
 }
 .checklist-dot {  
@@ -84,6 +92,9 @@ p {
   border-color: #92E3A9;
   opacity: 0.8;
 }
+/*----------------------------------*/
+
+/*-----Configuração d apassagem dos slides-----*/
 #radio01:checked ~ .first{
   margin-left: 0;  
 }
@@ -102,15 +113,19 @@ p {
 }
 .navigation-auto {
   position: absolute;
-  width: 700px;
-  margin-top: 470px;
   display: flex;
-  justify-content: center;
+  left: 50%;
+  transform: translate(-50%);
+  width: 700px;
+  margin-top: 470px; 
+  justify-content: center;  
 }
 #radio01:checked ~ .navigation-auto .auto-btn01,#radio02:checked ~ .navigation-auto .auto-btn02, #radio03:checked ~ .navigation-auto .auto-btn03 {
   background-color: #92E3A9;
   border: 1px solid #92E3A9;
 }
+/*------------------------------------------------------*/
+
 /* ------Configuração dos botões SKip e Continue----*/
 .btn-continue01, .btn-continue02, .btn-getStarted {  
   font-size: 25px;
@@ -121,7 +136,7 @@ p {
   border: none;
 }
 .btn-continue01:hover, .btn-continue02:hover, .btn-getStarted:hover {
-  box-shadow:  0px 8px 30px rgba(1, 107, 31, 0.4);
+  box-shadow:  0px 8px 30px rgba(1, 107, 31, 0.7);
   background-color: rgb(255, 255, 255);
   color: #92E3A9;
 }
