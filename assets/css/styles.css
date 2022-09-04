@@ -5,7 +5,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;   
-  background-color: #EBEBEB;
+  background-color: rgb(255, 255, 255);
 }
 
 div { 
@@ -23,158 +23,8 @@ p {
   margin-bottom: 30px;
 }
 
-.slider {
-  width: 700px;
-  height: 1000px;
-  overflow: hidden;
-  position: absolute; 
-
-}
-
-input {
-  display: none;
-}
-
-.slides {
-  display: flex;
-  text-align: center;
-  width: 300%;
-  height: 100%;
-  
-}
-
-.screen {
-  width: 33.3%;
-  transition: 0.4s;
-
-}
 
 
-.screen img {
-  width: 700px;
-  height: 550px;
-}
-
-.navigation-bar {
-  display: flex;
-  position: absolute;
-  bottom: 425px;
-  left: 50%;
-  transform: translate(-50%);
-  
-}
-
-.checklist-btn {
-  border: 2px solid #000000;
-  margin: 10px;
-  padding: 2px;
-  height: 10px;
-  width: 10px;  
-  border-radius: 30px;
-  cursor: pointer; 
-}
-.checklist-btn:hover {
-  transition: 0.4s;
-  background: #92E3A9;
-  border-color: #92E3A9;  
-  transform: translateY(-2px);
-}
-.navigation-auto div {
-  
-  border: #EBEBEB;
-  margin: 10px;
-  padding: 2px;
-  height: 10px;
-  width: 10px;  
-  border-radius: 30px;
-  cursor: pointer;
-
-}
-.navigation-auto {
-  
-  display: flex;
-  position: absolute;
-  bottom: 425px;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-
-#screen1:checked ~ .navigation-auto .auto-btn01 {  
-  background-color:#92E3A9 ;
-}
-#screen1:checked ~ #checklist01 {
-  display: none;
-  /* Problema com o checklist selecionado.*/
-}
-
-
-.buttons-screen{   
-  justify-content: center;
-  
-}
-.buttons-screen label, button { /*Configuração pendente.*/ 
-  
-  font-weight: bolder;
-  display: flex;
-  text-align: center;  
-  margin: 65px;
-  cursor: pointer; 
-
-}
-.btn-continue, .btn-getStarted {  
-  
-  font-size: 22px; 
-  padding: 20px 225px;
-  margin-bottom: 15px;
-  border: none;
-  box-shadow: 0px 8px 22px 8px rgba(0, 0, 0, 0.2);
-  background-color: #92E3A9;
-  color: #EBEBEB;
-  
-
-}
-.btn-continue:hover, .btn-getStarted:hover {
-  color: #92E3A9;
-  background-color: #0ea538;
-  transition:  0.6s;
-  box-shadow: 0px 8px 22px 8px rgba(94, 189, 30, 0.4);
-  transform: translateY(-8px);  
-
-}
-.btn-skip {
-  display: flex;  
-  justify-content: center;
-  font-size: 15px;
-  border: none;
-  color: #92E3A9;
-  background: none;
-  
-}
-.btn-skip:hover {
-  transform: translateY(-5px);
-  font-size: 18px;
-  transition:  0.4s;  
-
-}
-
-#screen1:checked ~ .first {
-  margin-left: 0;
-}
-#screen2:checked ~ .first, #screen2:checked ~ #continue-01:checked {
-  margin-left: -33.3%;
-}
-#screen3:checked ~ .first {
-  margin-left: -66.6%;
-}
-#continue-02:checked ~ .first {
-  margin-left: -66.6%;
-} 
-/*#screen1:checked ~ #checklist01 {  
-  background: #92E3A9;
-  border-color: #92E3A9;  
-  
-}
 
   
   
