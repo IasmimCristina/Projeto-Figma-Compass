@@ -1,162 +1,265 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   font-family: 'Poppins', sans-serif;
 }
-.screen {  
-  text-align: center;  
+/*-----------------Estilização das telas-------------- */
+.screen {
+  text-align: center;
 }
+
 .screen h1 {
   font-size: 2.4rem;
-  margin: 0.8rem  2.5vw 3rem;
+  margin: 0.8vh 2.5vw 3vh;
 }
+
 .screen p {
   font-size: 1.8rem;
-  margin: 0rem 3.8vw;  
+  margin: 0.5vh 8.8vw;
 }
+/*-------------------------------------------------*/
+/* -----------------Pontos de navegação-----------*/
 .navigation-dots {
   margin-top: 6.8vh;
 }
-.navigation-dots a {  
+
+.navigation-dots a {
   display: inline-block;
-  margin-left: 0.8vw;
-  padding: 0.4rem;  
+  margin-left: 1vw;
+  padding: 0.4rem;
   border-radius: 1rem;
   border: 0.1rem solid #000000;
 }
-.navigation-dots a:hover {  
+
+.navigation-dots a:hover {
   transition: 0.5s;
   background-color: #92E3A9;
   border: 0.1rem solid #92E3A9;
   opacity: 0.5rem;
 }
-#btn-continue, .btn-getStarted {
+/*---------------------------------*/
+/*-----------Configuração dos botões----------*/
+#btn-continue,
+.btn-getStarted {
   display: block;
   text-decoration: none;
   background-color: #92E3A9;
   padding: 4vw;
-  margin: 6.5vh 2.5rem;
+  margin: 6.5vh 8.5vw;
   color: rgb(255, 255, 255);
   font-size: 2rem;
   font-weight: bold;
   box-shadow: 3px 10px 15px rgba(16, 73, 228, 0.3);
   cursor: pointer;
 }
-#btn-continue:hover, .btn-getStarted:hover {
+
+#btn-continue:hover,
+.btn-getStarted:hover {
   box-shadow: 3px 10px 15px rgba(23, 180, 120, 0.4);
   transition: 0.5s;
   transform: translateY(-0.8rem);
 }
+
 #btn-skip {
   text-decoration: none;
   color: #92E3A9;
   font-size: 1.8rem;
-  font-weight: bold;  
+  font-weight: bold;
 }
-#btn-skip:hover {  
+
+#btn-skip:hover {
   transition: 0.5s;
   font-size: 2.4rem;
   transform: translateY(-0.7rem);
 }
-/* Media queries*/
+/*-------------------------------------------------------------------------------------*/
 
+/*--------------------------------- Media queries ---------------------------------------*/
+@media (min-width:445px) and (max-width:767px) and (min-height:721px) and (max-height:950px) {
+  .screen h1 {
+    font-size: 4.4rem;
+    margin: 0.8vh 2.5vw 3vh;
+  }
 
-@media (max-height: 667px) {
-  #btn-continue, .btn-getStarted {
-    margin: 5.5vh 4.5rem;
-    padding: 3vw;
-    font-size: 1.5rem;
-  }
-  #btn-skip { 
-    font-size: 1.5rem;
-  }
-  #btn-skip:hover { 
-    font-size: 2rem;
-    transform: translateY(-0.5rem);
-  }
   .screen p {
     font-size: 1.8rem;
-    margin: 0rem 4vw;  
-  }
-}
-
-@media (min-width: 768px) and (max-width:1000px) {
-  
-  .screen h1 {
-    font-size: 5.4rem;
-    margin: 2.8rem  4.5vw 3rem;
-  }
-  .screen p {
-    font-size: 2.5rem;
-    margin: 0rem 18.8vw;  
+    margin: 0.5vh 28.8vw;
   }
 
   .navigation-dots {
-    margin-top: 5.8vh;
-  }
-  .screen img {
-    margin-top: 8vh;
-    height: 40vh;
-    width: 65vw;
-  }  
-  #btn-continue, .btn-getStarted {   
-    padding: 2.5vw;
-    margin: 7vh 8.5vw 5.5vh;    
-    font-size: 3rem;
-  }
-  #btn-skip { 
-    font-size: 2.2rem;
-  }
-  
-}
-@media (max-width: 280px) {
-  .screen img {    
-    margin-top: 3.2rem;
-    height: 200px;
-    width: 200px;
-  } 
-  .screen h1 {
-    font-size: 2rem;
-    margin: 0.8rem  1.5vw 2rem;
-  }
-  .screen p {
-    font-size: 1.2rem;
-    margin: 0rem 17.8vw;  
+    margin-top: 2.8vh;
   }
 
-  #btn-continue, .btn-getStarted {   
-    padding: 3.5vw;
-    margin: 8.5vh 2.5rem;    
-    font-size: 1.2rem;
+  .navigation-dots a {
+    margin-left: 2vw;
+    padding: 0.6rem;
+    border-radius: 1.5rem;
   }
 
-  #btn-skip {    
-    font-size: 1.2rem;
-  }
-  
-}
-@media (min-width: 1024px) {
-  .screen img {    
-    margin-top: 3.8vh;
-    height: 45vh;
-    width: 65vw;
-  }
-  #btn-continue, .btn-getStarted {   
-    padding: 1.8vw;
-    margin: 7.2vh 25.5rem 3.5vh;    
+  #btn-continue,
+  .btn-getStarted {
+    margin: 10.5vh 25vw 5.5vh;
+    padding: 2vw;
     font-size: 2.5rem;
   }
-  #btn-skip {    
-    font-size: 2.2rem;
+
+  .screen img {
+    margin-top: 2vh;
+    height: 40vh;
+    width: 65vw;
+  }
+}
+
+
+@media (max-height: 720px) {
+
+  #btn-continue,
+  .btn-getStarted {
+    margin: 5.5vh 5.5rem;
+    padding: 2vw;
+    font-size: 1.8rem;
+  }
+
+  #btn-skip {
+    font-size: 1.5rem;
+  }
+
+  #btn-skip:hover {
+    font-size: 2rem;
+    transform: translateY(-0.5rem);
+  }
+
+  .screen img {
+    height: 40vh;
+    width: 75vw;
   }
 
   .screen h1 {
-    font-size: 5.5rem;
-    margin: 2vh  5.5vh 3vh;
+    font-size: 2.4rem;
+    margin: 0.8vh 2.5vw 3vh;
   }
+
+  .screen p {
+    font-size: 1.8rem;
+    margin: 0rem 4vw;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width:1000px) {
+
+  .screen h1 {
+    font-size: 5.4rem;
+    margin: 2.8vh 5.5vw 3vh;
+  }
+
   .screen p {
     font-size: 2.2rem;
-    margin: 2rem 28.8vw;  
+    margin: 0rem 25.8vw;
+  }
+
+  .navigation-dots {
+    margin-top: 2.8vh;
+  }
+
+  .navigation-dots a {
+    margin-left: 2.2vw;
+    padding: 0.8rem;
+    border-radius: 1.5rem;
+  }
+
+  .screen img {
+    margin-top: 2vh;
+    height: 45vh;
+    width: 75vw;
+  }
+
+  #btn-continue,
+  .btn-getStarted {
+    padding: 2vw;
+    margin: 6.5vh 25.5vw 3.5vh;
+    font-size: 3.2rem;
+  }
+
+  #btn-skip {
+    font-size: 2rem;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .screen img {
+    margin-top: 8.2vh;
+    margin-bottom: 2.5vh;
+    height: 30vh;
+    width: 85vw;
+  }
+
+  .screen h1 {
+    font-size: 2rem;
+    margin: 0.8rem 1.5vw 2rem;
+  }
+
+  .screen p {
+    font-size: 1.2rem;
+    margin: 0rem 10.8vw;
+  }
+
+  .navigation-dots {
+    margin-top: 2.8vh;
+  }
+
+  .navigation-dots a {
+    margin-left: 2.5vw;
+    padding: 0.4rem;
+    border-radius: 1rem;
+  }
+
+  #btn-continue,
+  .btn-getStarted {
+    padding: 3.5vw;
+    margin: 10.5vh 6.5vw 4vh;
+    font-size: 1.2rem;
+  }
+
+  #btn-skip {
+    font-size: 1.3rem;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .screen img {
+    height: 45vh;
+    width: 30vw;
+  }
+
+  .navigation-dots a {
+    margin-left: 1vw;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+  }
+
+  #btn-continue,
+  .btn-getStarted {
+    padding: 1.3vw;
+    margin: 5.2vh 32.5vw 3.5vh;
+    font-size: 2rem;
+  }
+
+  #btn-skip {
+    font-size: 1.5rem;
+  }
+
+  .screen h1 {
+    font-size: 3.5rem;
+    margin: 0vh 5.5vh 3vh;
+  }
+
+  .screen p {
+    font-size: 1.5rem;
+    margin: 2vh 35.8vw;
   }
 }
