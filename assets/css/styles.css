@@ -20,7 +20,7 @@ body {
 }
 .navigation-dots a {  
   display: inline-block;
-  margin-left: 0.8rem;
+  margin-left: 0.8vw;
   padding: 0.4rem;  
   border-radius: 1rem;
   border: 0.1rem solid #000000;
@@ -60,6 +60,8 @@ body {
   transform: translateY(-0.7rem);
 }
 /* Media queries*/
+
+
 @media (max-height: 667px) {
   #btn-continue, .btn-getStarted {
     margin: 5.5vh 4.5rem;
@@ -79,59 +81,32 @@ body {
   }
 }
 
-@media (min-width: 820px) {
+@media (min-width: 768px) and (max-width:1000px) {
   
   .screen h1 {
     font-size: 5.4rem;
-    margin: 2.8rem  2.5vw 3rem;
-  }
-  .screen p {
-    font-size: 2.8rem;
-    margin: 0rem 14.8vw;  
-  }
-  .navigation-dots {
-    margin-top: 2.8vh;
-  }
-  .screen img {
-    margin-top: 8rem;
-    height: 450px;
-    width: 650px;
-  }
-  #btn-continue, .btn-getStarted {
-    font-size: 3.5rem;
-    margin: 6.5vh 10.5rem;
-    padding: 2.5vw;
-  }
-  #btn-skip {    
-    font-size: 2rem;
-  }
-  #btn-skip:hover {
-    font-size: 2.5rem;
-  }
-}
-@media (min-width: 768px) {
-  
-  .screen h1 {
-    font-size: 4.4rem;
-    margin: 2.8rem  2.5vw 3rem;
+    margin: 2.8rem  4.5vw 3rem;
   }
   .screen p {
     font-size: 2.5rem;
-    margin: 0rem 14.8vw;  
+    margin: 0rem 18.8vw;  
   }
 
   .navigation-dots {
     margin-top: 5.8vh;
   }
   .screen img {
-    margin-top: 9rem;
-    height: 350px;
-    width: 450px;
+    margin-top: 8vh;
+    height: 40vh;
+    width: 65vw;
   }  
   #btn-continue, .btn-getStarted {   
     padding: 2.5vw;
-    margin: 5.5vh 8.5rem;    
+    margin: 7vh 8.5vw 5.5vh;    
     font-size: 3rem;
+  }
+  #btn-skip { 
+    font-size: 2.2rem;
   }
   
 }
@@ -160,4 +135,28 @@ body {
     font-size: 1.2rem;
   }
   
+}
+@media (min-width: 1024px) {
+  .screen img {    
+    margin-top: 3.8vh;
+    height: 45vh;
+    width: 65vw;
+  }
+  #btn-continue, .btn-getStarted {   
+    padding: 1.8vw;
+    margin: 7.2vh 25.5rem 3.5vh;    
+    font-size: 2.5rem;
+  }
+  #btn-skip {    
+    font-size: 2.2rem;
+  }
+
+  .screen h1 {
+    font-size: 5.5rem;
+    margin: 2vh  5.5vh 3vh;
+  }
+  .screen p {
+    font-size: 2.2rem;
+    margin: 2rem 28.8vw;  
+  }
 }
