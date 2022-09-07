@@ -12,12 +12,12 @@ body {
 }
 
 .screen h1 {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   margin: 0.8vh 2.5vw 3vh;
 }
 
 .screen p {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin: 0.5vh 8.8vw;
 }
 
@@ -121,8 +121,8 @@ body {
 
   #btn-continue,
   .btn-getStarted {
-    margin: 5.5vh 5.5rem;
-    padding: 2vw;
+    margin: 5.5vh 18.5vw;
+    padding: 2.4vw;
     font-size: 1.8rem;
   }
 
@@ -147,7 +147,7 @@ body {
 
   .screen p {
     font-size: 1.8rem;
-    margin: 0rem 4vw;
+    margin: 0rem 15vw;
   }
 
 }
@@ -183,8 +183,8 @@ body {
   #btn-continue,
   .btn-getStarted {
     padding: 2vw;
-    margin: 6.5vh 25.5vw 3.5vh;
-    font-size: 3.2rem;
+    margin: 6.5vh 23.5vw 3.5vh;
+    font-size: 3rem;
   }
 
   #btn-skip {
@@ -195,7 +195,7 @@ body {
 
 @media (max-width: 320px) {
   .screen img {
-    margin-top: 8.2vh;
+    margin-top: 2.2vh;
     margin-bottom: 2.5vh;
     height: 30vh;
     width: 85vw;
@@ -223,9 +223,9 @@ body {
 
   #btn-continue,
   .btn-getStarted {
-    padding: 3.5vw;
+    padding: 4.5vw;
     margin: 10.5vh 6.5vw 4vh;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   #btn-skip {
@@ -236,11 +236,14 @@ body {
 
 @media (min-width: 1024px) {
   .screen img {
-    height: 45vh;
-    width: 30vw;
+    height: 50vh;
+    width: 45vw;
   }
 
-  .navigation-dots a {
+  .navigation-dots {
+    margin-top: 2.8vh;
+  }
+  .navigation-dots a {    
     margin-left: 1vw;
     padding: 0.5rem;
     border-radius: 1.5rem;
@@ -248,22 +251,22 @@ body {
 
   #btn-continue,
   .btn-getStarted {
-    padding: 1.3vw;
-    margin: 5.2vh 32.5vw 3.5vh;
-    font-size: 2rem;
+    padding: 1vw;
+    margin: 5.2vh 38.5vw 2.5vh;
+    font-size: 1.5rem;
   }
 
   #btn-skip {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .screen h1 {
-    font-size: 3.5rem;
-    margin: 0vh 5.5vh 3vh;
+    font-size: 3.8rem;
+    margin: 2vh 5.5vh 3vh;
   }
 
   .screen p {
-    font-size: 1.5rem;
-    margin: 2vh 35.8vw;
+    font-size: 1.4rem;
+    margin: 2vh 39.8vw;
   }
 }
